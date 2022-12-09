@@ -1,0 +1,73 @@
+﻿@model MyShop.Core.Models.Product
+
+@{
+    ViewData["Title"] = Model.Name + "Details";
+}
+
+@*<h1>Details</h1>*@
+<h2>@Html.DisplayFor(model => model.Name)</h2>
+
+<div>
+    <div class="col-md-12">
+        <img class="img-responsive" src="/wwwroot/assets/@Model.Image"/>
+    </div>
+    <div class="col-md-10">
+
+    <hr />
+    <dl class="row">
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>*@
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            $@Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+        </dt>
+
+        <dd><a href="#" class="btn btn-default">Add To Basket</a></dd>
+
+        <dt></dt>
+        <dd>
+                <a asp-action="Index">Back to List</a>
+        </dd>
+
+        @*<dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Image)
+        </dd>*@
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>*@
+    </dl>
+</div>
+</div>
+
+<div class="col-md-12 clearfix">
+    @*<a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |*@
+
+
+    
+</div>
